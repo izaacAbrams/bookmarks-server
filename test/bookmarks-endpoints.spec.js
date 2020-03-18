@@ -1,7 +1,10 @@
 const { expect } = require("chai");
 const knex = require("knex");
 const app = require("../src/app");
-const { makeBookmarksArray } = require("./bookmarks.fixtures");
+const {
+  makeBookmarksArray,
+  makeMaliciousBookmark
+} = require("./bookmarks.fixtures");
 
 describe.only("Bookmarks Endpoints", function() {
   let db;

@@ -3,6 +3,7 @@ const bookmarkRouter = express.Router();
 const bodyParser = express.json();
 const uuid = require("uuid/v4");
 const logger = require("../logger");
+const xss = require("xss");
 const BookmarksService = require("./bookmarks-service");
 
 bookmarkRouter
