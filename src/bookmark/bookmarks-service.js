@@ -3,7 +3,7 @@ const BookmarksService = {
     return knex.select("*").from("bookmarks_table");
   },
 
-  insertArticle(knex, newBookmark) {
+  insertBookmark(knex, newBookmark) {
     return knex
       .insert(newBookmark)
       .into("bookmarks_table")
